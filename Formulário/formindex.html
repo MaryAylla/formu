@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        @font-face {
+            font-family:'big_noodle_titling';
+            src: url(font/big_noodle_titling.ttf) format(truetype);
+        }
+        @font-face {
+            font-family: 'MagicSchoolTwo';
+            src: url(font/MagicSchoolTwo.ttf) format(truetype);
+        }
+        .forms{
+       text-align: center;
+       background-color: rgba(84, 84, 84, 0.837);
+       display: block;
+       position: absolute;
+       height: 750px;
+       max-width: 600px;
+       top: 8%;
+       left: 33%;
+       padding: 20px;
+       border-radius: 50px;
+        }
+        .imgdefundo{
+            background-image: url(img/Design\ sem\ nome3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+               }
+               .noms{
+                font-family:'big_noodle_titling', sans-serif;
+                font-size: 30px;
+                margin-top: 10px;
+               }
+               .for{
+                font-family:'MagicSchoolTwo', sans-serif;
+                font-size: 60px;
+                margin: 2px;
+               }
+        .box{
+        width: 250px;
+        height: 25px;  
+     }
+      .but{
+        padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 2px;
+            background-color: #f3e4ff; 
+            border: none;
+            border-radius: 5px;
+      }
+    </style>
+</head>
+<body class="imgdefundo">
+    <form class="forms">
+    <h4 class="for">Formulário</h4>    
+    <fieldset><legend>Dados Pessoais</legend>
+    <p class="noms">Nome:
+    <input class="box" type="text" name="Nome" size="28" maxlength="90" placeholder="Nome Completo"></p>
+    <p class="noms">E-mail:
+    <input type="text" name="email" size="28" maxlength="30" placeholder="Digite seu E-mail"></p>
+    <p class="noms">Masculino:
+    <input type="radio" name="sexo">
+    Feminino:
+    <input type="radio" name="sexo"></p>
+    <p class="noms">Data de Nascimento:
+    <input type="date" name="datadenascimento" size="28" maxlength="30" placeholder="Digite sua Data de Nascimento"></p>
+    </fieldset>
+    <br>
+    <fieldset><legend>Endereço Residencial</legend>
+    <p class="noms">Logradouro:
+    <input type="text" name="logradouro" size="28" maxlength="30" placeholder="Av. Rua.">
+    Número:
+    <input type="number" name="numero" min="1" max="9999" maxlength="30"></p>
+    <p class="noms">Cidade:
+    <input type="text" name="cidade" size="28" maxlength="30" placeholder="Digite sua Cidade" </p>
+
+<p class="noms">Estado:
+<select>
+<optgroup label="Região Nordeste">
+<option value="CE">Ceará</option>
+<option value="BA">Bahia</option>
+<option value="AL">Alagoas</option>
+</optgroup>
+<optgroup label="Região Sudeste">
+<option value="SP">São Paulo</option>
+<option value="RJ">Rio de Janeiro</option>
+<option value="MG">Minas Gerais</option>
+</optgroup>
+</select>
+</fieldset>
+<br>
+<input class="but" type="submit" value="Enviar">
+</form>
+</body>
+</html>
