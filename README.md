@@ -1,0 +1,1 @@
+Este formulário foi criado com o intuito de praticar o uso de diferentes tipos de campos de entrada em HTML (como texto, e-mail, senha, radio, checkbox e select), além de aplicar validações básicas. O projeto representa um exemplo funcional de como coletar dados de usuários de forma organizada, podendo ser adaptado para diversas finalidades.
